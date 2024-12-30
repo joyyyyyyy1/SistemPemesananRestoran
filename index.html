@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem Pengurutan Pesanan Restoran</title>
+    <link rel="stylesheet" href="style.css">  <!-- Link ke file CSS -->
+</head>
+<body>
+    <h1>Sistem Pengurutan Pesanan Restoran</h1>
+    <div class="container">
+        <!-- Form untuk pencarian -->
+        <input type="text" id="searchInput" placeholder="Cari Menu">
+        <button onclick="searchOrder()">Cari</button>
+
+        <!-- Tombol untuk pengurutan -->
+        <button onclick="sortOrders()">Urutkan Berdasarkan Jumlah Pesanan</button>
+
+        <!-- Tabel untuk menampilkan data pesanan -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Menu</th>
+                    <th>Jumlah</th>
+                </tr>
+            </thead>
+            <tbody id="orderTable">
+                <!-- Data akan ditampilkan di sini -->
+            </tbody>
+        </table>
+
+        <!-- Form untuk menambahkan menu -->
+        <div class="add-section">
+            <h2>Tambah Menu</h2>
+            <input type="text" id="menuName" placeholder="Nama Menu">
+            <input type="number" id="menuJumlah" placeholder="Jumlah Pesanan">
+            <button onclick="addOrder()">Tambah Menu</button>
+        </div>
+    </div>
+    <script src="script.js" defer></script> <!-- Link ke file JavaScript -->
+</body>
+</html>
